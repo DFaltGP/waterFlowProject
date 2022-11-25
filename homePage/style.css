@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #23232e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f8f8ff; /* background: linear-gradient(180deg, #08084e, #2f4dd3) ; #23232e #3d5c93ciano da foto */
+    height: 10vh;
+}
+
+main {
+   display: grid;
+   background: url("../images/bg-darkblue.png") no-repeat center center;
+   background-size: cover;
+   height: 86vh; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    width: 100%;
+    color: #000000;
+    background: #f8f8ff;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    font-size: large;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background:#23232e;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.animated-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 40vw;
+        height: 86vh;
+        background:#f8f8ff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        cursor: pointer;
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .nav-list li:hover::after{
+        width: 100%;
+    }
+
+    .nav-list li a::after {
+        display: block;
+        content: " ";
+        width: 100%;
+        height: 4px;
+        background-color: #23232e;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+    .reflected > * {
+        display: none;
+    }
+}
+@media (max-width: 1300px) {
+    .animated-btn {
+        display: none;
+    }
+}
+@media (max-height: 550px) {
+    .animated-btn {
+        display: none;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+
+@keyframes navLinkFade {
+     from {
+        opacity: 0;
+        transform: translateX(50px);
+     }
+     to {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    background:rgb(227, 50, 50);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+    background:rgb(227, 50, 50);
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    background:rgb(227, 50, 50);
+}
+
+/* Estilização reflexo */
+
+ .reflected {
+    width: 100vw;
+    height: 20vh;
+    /* border: 1px solid red; */
+    position: relative;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f8f8ff;
+    display: inline-block;
+    width: max-content;
+    padding: 0 10px;
+}
+
+.reflected > * {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #f8f8ff;
+}
+.reflected > :last-child {
+    transform: rotatex(180deg) translateY(28px);
+    mask-image: linear-gradient(transparent 50%, white 90%);
+    -webkit-mask-image: linear-gradient(transparent 50%, white 90%);
+    opacity: 0.72;
+}
+
+/* Estilização reflexo */
+
+button {
+    padding: 1em 3em;
+    color: #f8f8ff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em#6959cd ;
+    background: #0e1242; 
+    border: 0.25em solid #f8f8ff;
+    border-radius: 1em;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s; 
+    
+}
+button::after {
+    content: "";
+    height: 6vh;
+    width: 5vw;
+    background-color:#857dba ;
+    filter: blur(2em);
+    opacity: 0.7;
+    pointer-events: none;
+    transform:perspective(1.5em)
+    rotateX(35deg)
+    scale(1, 0.6)
+}
+button:hover {
+    color:#f8f8ff;
+    background-color:#130d65;
+    box-shadow: 0 0 2px 6px #130d65,
+    0 0 4px 2px #130d65, 
+    inset 0 0 2px 4px #130d65;
+}
+
+/* Estilização botão */
+
+.card-transform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(10deg) rotateY(15deg) rotateZ(-2deg) scale3d(1, 1, -0.9)  scale(1.1) translateX(50px);
+}
+.card {
+    background: url() center;
+    color: white;
+    border-radius: 8px;
+    padding: 0px 18px;
+    width: 244px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    transform: translate(0);
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.card h2 {
+    text-transform: capitalize;
+}
+.card h4 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 48px;
+}
+.card-1{
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+.card-1:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #b527cf;
+}
+.card-1::before {
+    background: linear-gradient(90deg, #b527cf 0%, #3546f0 100%);
+}
+
+.card-2{
+    background-size: cover;
+    transform: scale(1.01);
+    margin-right: 31px;
+}
+.card-2:hover {
+    transform: scale(1.1);
+    box-shadow: -7px 4px 28px -3px #3bd9d9;
+}
+.card-2::before {
+    background: linear-gradient(90deg, #3bd9d9 0%, #8035f0 100%);
+}
+
+.card-3{
+    background-size: cover;
+}
+.card-3:hover {
+    transform: scale(1.08);
+    box-shadow: -7px 4px 28px -3px #ff9500;
+}
+.card-3::before {
+    background: linear-gradient(90deg, #ff9500 0%, #d5cb0f 100%);
+}
+.text-about {
+    color:whitesmoke;
+}   
