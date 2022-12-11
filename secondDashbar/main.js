@@ -2,6 +2,7 @@ const body = document.querySelector("body"),
     sidebar = body.querySelector(".sidebar"),
     toggle = body.querySelector(".toggle"),
     searchBtn = body.querySelector(".search-box"),
+    searchInput = body.querySelector(".search-box input"),
     modeSwitch = body.querySelector(".toggle-switch"),
     modeText = body.querySelector(".mode-text"),
     links = body.querySelector(".sidebar li .icon");
@@ -27,3 +28,17 @@ const body = document.querySelector("body"),
     links.addEventListener('click', () => {
         sidebar.classList.remove('close')
     })
+
+    // searchInput.addEventListener('input',(search) => {
+    //     const dataBase = ["data1","data2","data3"];
+    //     const res = [];
+    //     for(let data of dataBase) {
+    //         if(search === data){
+    //             res.push(search)
+    //             console.log(res)
+    //         }
+    //     }
+    // })
+
+    
+    

@@ -34,7 +34,7 @@ nav {
 
 main {
    display: grid;
-   background: url("../images/bg-darkblue.png") no-repeat center center;
+   background: #a5a5c6; /* url("../images/bg-darkblue.png") no-repeat center center; */
    background-size: cover;
    height: 86vh; 
 }
