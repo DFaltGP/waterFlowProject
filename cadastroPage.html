@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cadastroPage.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Cadastro</title>
+    <script src="./loginPage.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="container-label">Cadastre-se </div>
+
+        <div class="container-icon">
+          <div class="circle">
+            <i class="bx bx-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="container-form">
+          <form action="">
+            <label for="name">Name</label>
+            <input
+                type="name"
+                id="name"
+                placeholder="Node do usuário"
+                autofocus
+                />
+            <label for="email">E-mail</label>
+            <input
+              type="name"
+              id="email"
+              placeholder="E-mail do usuário"
+              autofocus
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Digite a sua senha"
+            />
+
+            <button type="submit" onclick="cadastrar(); return false">Cadastrar</button>
+           
+
+           
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./cadastroPage.js"></script>
+  </body>
+</html>
