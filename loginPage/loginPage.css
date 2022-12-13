@@ -10,7 +10,7 @@ body {
 }
 
 body {
-    background: linear-gradient(180deg, #0e1242, #08084e);
+    background: linear-gradient(180deg, #2834b1, #2727cf);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     overflow: hidden;
@@ -59,7 +59,7 @@ body {
     justify-content: center;
     font-size: 2rem;
     color: #fff;
-    background: linear-gradient(90deg, #1a1a56, #0e1242 );
+    background: linear-gradient(90deg, #3a3ab3, #2431c1 );
     padding-left: 2rem;
     padding-right: 3rem;
     border-top-left-radius: 8px;
@@ -85,7 +85,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    background: linear-gradient(90deg, #1a1a56, #0e1242 );
+    background: linear-gradient(90deg, #2d2daf, #2b39d2 );
     height: 48px;
     width: 48px;
     border-radius: 50%;
@@ -116,13 +116,22 @@ body {
 }
 
 .card .container-form input {
-    color: rgb(120, 96, 96);
+    color: rgb(19, 6, 201);
     background-color: transparent;
     padding: 8px;
     border: none;
-    border-bottom: 1px solid #6959cd;
+    border-bottom: 1px solid #2200ff;
     width: 100%;
 }
+ /* Tentei mudar a cor da bord de acordo com a validação mas deu errado */
+
+/* .card .container-form #email.error {
+    border-bottom: 1px solid #ff0000;
+}
+
+.card .container-form #password.error {
+    border-bottom: 1px solid #ff0000;
+} */
 
 .card .container-form input:focus {
     border-color: #23232e;
@@ -152,7 +161,7 @@ body {
 .card .container-form button {
     color:#ffffff;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #08084e, #505363);
+    background: linear-gradient(180deg, #3d3da9, #3246b7);
     padding: 12px 16px;
     margin-top: 2rem;
     border: none;

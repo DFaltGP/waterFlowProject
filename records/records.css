@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+
+    border: 1px solid red;
+}
+
+.container .records {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    width: 100vw;
+}
+
+.container .records .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.4rem;
+    gap: 6px;
+    border: 1px solid blue;
+    width: 100vw;
+}
+
+.container .records .content .results {
+    width: 70px;
+    background: gray;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem;
+    border: 1px solid blue;
+    width: 100vw;
+}
+.container .menu .menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+    list-style: none;
+}
+
+.container .menu .menu-list li {
+    width: 70px;
+    background: gray;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .menu .menu-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.container .records {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 1.5rem;
+    gap: 6px;
+    width: 100vw;
+    background: gray;
+    border: 1px solid green;
+    width: 100vw;
+}
+
+.container .records .content {
+    display: flex;
+    flex-wrap: wrap;
+}

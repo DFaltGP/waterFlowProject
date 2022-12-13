@@ -14,8 +14,8 @@ class WaterFlowGraphic {
 
 const ctx = document.querySelector("#myChart").getContext("2d")
 const gradient = ctx.createLinearGradient(100, 0, 0, 400)
-gradient.addColorStop(0, '#6959cd')
-gradient.addColorStop(1, '#23232e')
+gradient.addColorStop(0, '#086ca7')
+gradient.addColorStop(1, '#04827f')
 
 const labels = [
     '2022',
@@ -30,7 +30,7 @@ const data = {
     labels,
     datasets: [{
         data: [315, 365, 348, 320, 248, 280, 260, 270, 231],
-        label: "Progressão de gastos por ano", //data pode ser puxado do banco de dados via http a axios
+        label: "Consumo de água anual", //data pode ser puxado do banco de dados via http a axios
         fill: true,
         backgroundColor: gradient,
     }]
@@ -69,7 +69,7 @@ const config = {
         },
         plugins: {
             customCanvasBackgroundColor: {
-              color: '#f8f8ff',
+              color: '#f8f8ff', // cor de fundo do background
             },
     },
 },

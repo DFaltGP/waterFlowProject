@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./records.css">
     <title>Relatórios</title>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <header>
-                <form action="" method="get" id="record">
-                    <fieldset form="record">
-                        <ul>
-                            <li> <input type="text" id="email" placeholder="email"> </li>
-                            <li> <input type="password" id="password" placeholder="senha"> </li>
-                        </ul>
-                        <button type="submit" id="button">enviar</button>
-                    </fieldset>
-                </form>
+            <header class="menu">
+                <ul class="menu-list">
+                    <li class="items">Período</li>
+                    <li class="items">Consumo</li>
+                    <li class="items">Tempo</li>
+                    <li class="items">Gastos</li>
+                    <li class="items">Situação</li>
+                </ul>
+                <ul class="menu-icons">
+                    <li class="icons"> <button>Arquivos</button> </li>
+                    <li class="icons">Notificações</li>
+                    <li class="icons">Usuário</li>
+                </ul>
             </header>
-        </div>
+            <main class="records">
+                <div class="content">
+                    <!-- <div class="results">teste</div>
+                    <div class="results">teste</div>
+                    <div class="results">teste</div>
+                    <div class="results">teste</div>
+                    <div class="results">teste</div> -->
+                </div>
+            </main>
     </div>
     <script src="./records.js"></script>
 </body>
