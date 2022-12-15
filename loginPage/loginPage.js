@@ -16,11 +16,12 @@ button.addEventListener('click', (e) => {
     e.preventDefault();
 
     for(let data of dataBase) {
-        if((email.value === data.email) && (password.value === data.password)) {
+        const validation = (email.value === data.email) && (password.value === data.password)
+        if(validation) {
             alert("Login aprovado");
             window.location.href = "http://127.0.0.1:5500/homePage/index.html";
         } else {
-            console.log("Deu errado")
+            console.log('deu ruim')
         }
     }
 })

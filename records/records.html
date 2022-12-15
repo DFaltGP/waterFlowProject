@@ -5,31 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./records.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Relatórios</title>
 </head>
 <body>
     <div class="container">
-            <header class="menu">
-                <ul class="menu-list">
-                    <li class="items">Período</li>
-                    <li class="items">Consumo</li>
-                    <li class="items">Tempo</li>
-                    <li class="items">Gastos</li>
-                    <li class="items">Situação</li>
-                </ul>
-                <ul class="menu-icons">
-                    <li class="icons"> <button>Arquivos</button> </li>
-                    <li class="icons">Notificações</li>
-                    <li class="icons">Usuário</li>
-                </ul>
-            </header>
+                    
             <main class="records">
                 <div class="content">
-                    <!-- <div class="results">teste</div>
-                    <div class="results">teste</div>
-                    <div class="results">teste</div>
-                    <div class="results">teste</div>
-                    <div class="results">teste</div> -->
+                    <div class="head">
+                        <select name="dashs" id="dash-select">
+                            <option value="">SETOR QUÍMICO</option>
+                            <option value="">BANHEIROS</option>
+                        </select>
+                        <div class="fill">
+                            <button id="filter">FILTRAR <i class='bx bx-filter'> </i> </button> 
+                        </div>
+                    </div>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Período</th>
+                                <th>Gastos</th>
+                                <th>Consumo</th>
+                                <th>Tempo</th>
+                                <th>Operação</th>
+                                <th>Volume</th>
+                                <th>Percentual Mensal</th>
+                                <th>Percentual Anual</th>
+                                <th>Situação geral</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+                            <tr>
+                                <td>11/12/2022 </td>
+                                <td>R$ 500,89 </td>
+                                <td>45.000L </td>
+                                <td>78h15min47s </td>
+                                <td>ATIVO </td>
+                                <td>498dm </td>
+                                <td>+12,5%</td>
+                                <td>-0.56% </td>
+                                <td>NEGATIVA</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                     <div id="print-div">
+                        <button id="print">IMPRIMIR <i class="bx bx-printer"></i></button>
+                     </div>
+                    
                 </div>
             </main>
     </div>

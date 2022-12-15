@@ -6,10 +6,11 @@
 body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+    background: #f8f8ff; /*#a3ccc8*/
 }
 
 a {
-    color: #23232e;
+    color:rgb(61, 61, 87);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -34,7 +35,7 @@ nav {
 
 main {
    display: grid;
-   background: #3e3ed6; /* url("../images/bg-darkblue.png") no-repeat center center; */
+   background-image: url(../images/jujuba.png); /* url("../images/bg-darkblue.png") no-repeat center center; */
    background-size: cover;
    height: 86vh; 
 }
@@ -311,10 +312,11 @@ button:hover {
     margin: 30px auto 0 auto;
     border-radius: 32px;
     width: 90vw;
+    padding: 2.2rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1.2rem;
-    color:#000000;
-    background: #f8f8ff;
+    color:rgb(61, 61, 87);
+    background: rgba(121, 212, 212, 0.5);
 }

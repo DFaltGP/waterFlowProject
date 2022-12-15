@@ -98,8 +98,7 @@ const body = document.querySelector("body"),
         body.classList.toggle("dark");
 
         if(body.classList.contains("dark")) {
-            modeText.innerText = "Claro"
-            //precisamos fazer com que esse trecho aqui seja realidade quando o tema for mudado pra escuro CONFIG.OPTIONS.PLUGINS.customCanvasBackgroundColor.color: "#000000"
+            modeText.innerText = "Claro"; 
         } else {
             modeText.innerText = "Escuro"        
         }

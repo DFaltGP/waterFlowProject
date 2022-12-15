@@ -58,6 +58,20 @@ const dataBase = [
 
     // render(dataBase)
 
+    
+    const print = document.querySelector("#print");
+    print.addEventListener('click', () => {
+        const head = document.querySelector('.head .fill');
+        const printDiv = document.querySelector("#print-div")
+        printDiv.innerHTML = '';
+        head.innerHTML = '';
+        window.print()
+        setTimeout(()=>{
+            printDiv.innerHTML = `<button id="print">IMPRIMIR <i class="bx bx-printer"></i></button>`;
+            head.innerHTML = `<button id="filter">FILTRAR <i class='bx bx-filter'> </i> </button>`;
+        }, 10);
+    })
+
 
 
 
