@@ -60,7 +60,7 @@ const dataBase = [
 
     
     const print = document.querySelector("#print");
-    print.addEventListener('click', () => {
+    print.addEventListener('click', (e) => {
         const head = document.querySelector('.head .fill');
         const printDiv = document.querySelector("#print-div")
         printDiv.innerHTML = '';

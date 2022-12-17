@@ -320,3 +320,23 @@ button:hover {
     color:rgb(61, 61, 87);
     background: rgba(121, 212, 212, 0.5);
 }
+
+.container main .contents .first {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.container main .contents .second {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container main .contents .second h2 {
+    margin: 0 auto;
+}
