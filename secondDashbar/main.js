@@ -20,12 +20,12 @@ gradient.addColorStop(0, '#086ca7')
 gradient.addColorStop(1, '#04827f')
 
 const labels = [
+    '2017',
+    '2018',
+    '2019',
+    '2020',
+    '2021',
     '2022',
-    '2023',
-    '2024',
-    '2025',
-    '2026',
-    '2027',
 ]
 
 const data = {
@@ -64,7 +64,7 @@ const config = {
                 ticks: {
                     callback: function(value) {
                         let finalValue = value.toFixed(2)
-                        return finalValue + " Litros"
+                        return finalValue + " Mil Litros"
                     }
                 }
             }
@@ -116,6 +116,10 @@ const body = document.querySelector("body"),
         sidebar.classList.remove('close')
     })
 
+    const recordLink = document.querySelector('#recordPage')
+    recordLink.addEventListener('click', () => {
+        location.href = 'http://127.0.0.1:5500/records/records.html'
+    })
     // searchInput.addEventListener('input',(search) => {
     //     const dataBase = ["data1","data2","data3"];
     //     const res = [];

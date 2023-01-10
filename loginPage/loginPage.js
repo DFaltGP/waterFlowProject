@@ -5,7 +5,7 @@ const dataBase = [
     },
     {
         email: "gpachecodiniz@gmail.com",
-        password: "123654",
+        password: "aabbcc",
     },
 ];
     const button = document.querySelector("#send");

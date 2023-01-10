@@ -74,8 +74,6 @@ const dataBase = [
 
 
 
-
-
     // EXEMPLO DE RENDERIZAÇÃO PARA A PÁGINA 
                 // <div class="content">
                 //     <div class="results">teste</div>

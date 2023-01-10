@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #f8f8ff;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100vw;
+    height: 10vh;
+
+    background: #f8f8ff;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    width: 100vw;
+    height: 80vh;
+    height: 80%;
+    background: #f8f8ff;
+}
+#create-ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    width: 100%;
+
+}
+
+#ac-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    gap: 1.1rem;
+
+    width: 40%;
+    height: 100%;
+
+    border-radius: 8px;
+    border: 1px solid #2a62c5;
+
+    color: #f8f8ff;
+    background: linear-gradient(90deg, #5accf1, #525ff0); /* QUE DEGRADÊ LINDO MLK */
+    box-shadow: 0 0 16px 4px;
+}
+
+#ac-form .input-box {
+    display: flex;
+    align-items: center;
+}
+
+#ac-form .input-box input {
+    width: 20rem;
+    height: 2rem;
+    
+    border: none;
+    
+    background: #f8f8ffdd;
+    
+    outline: none;
+    padding-left: 0.6rem;
+
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#ac-form .input-box i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: #6969ff;
+    
+    width: 2rem;
+    height: 2rem;
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#ac-form button {
+    width: 22rem;
+    padding: 0.4rem;
+    border-radius: 4px;
+
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+footer #footer-link {
+    color: #0000ff;
+}

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -74,10 +75,15 @@ footer {
 }
 
 .animated-btn {
-    display: flex;
+    display: none; /* MUDA ISSO AQUI DEPOIS BOY */
     gap: 1rem;
 }
-
+ .users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
 
 @media (max-width: 999px) {
     body {
