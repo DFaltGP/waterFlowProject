@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #f8f8ff;
+    color: #7d769c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    /* margin-left: 40px;
+    margin-top: 40px; */
+    width: 100vw;
+    padding: 2rem;
+}
+
+.container .records .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+table thead {
+    background: #0484A1;
+    color: #f8f8ff;
+    border-radius: 6px;
+}
+
+table thead tr th{
+    padding: 12px;
+    border-radius: 6px;
+}
+
+table tbody tr td{
+    padding: 12px;
+    border: 2px solid rgb(33, 33, 122);
+    border-radius: 6px;
+}
+
+#print {
+    padding: 12px;
+    border-radius: 6px;
+    background: #04a152;
+    color: #f8f8ff;
+    font-family: 'Poppins', sans-serif;
+    border-color: #f8f8ff;
+    scale: (0.8);
+    cursor: pointer;
+}
+
+#print.hidden {
+    display: hidden;
+}
+
+.container .records .content .head{
+    display: hidden;
+}
+
+.container .records .content .head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .records .content #dash-select {
+    font-family: 'Poppins', sans-serif;
+    width: 30vw;
+    left: 0;
+    border-radius: 6px;
+    border: none;
+    background: #23232e;
+    color: #f8f8ff;
+    padding: .8rem;
+    cursor: pointer;
+}
+
+.container .records .content #filter {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    padding: .8rem;
+    cursor: pointer;
+    border: none;
+}
+
+.container .records .content #filter:hover {
+    background: rgb(248, 238, 238);
+}
+
+
+

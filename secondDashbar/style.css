@@ -288,7 +288,7 @@ body.dark .switch::before {
 
 .sidebar.close ~ .home {
     width: calc(100% - 88px);
-    left: 88px;    
+    left: 88px;    /* PARTE QUE TORNA O DASHBOARD RESPONSIVO À PÁGINA */
 }
 
 .mychart {

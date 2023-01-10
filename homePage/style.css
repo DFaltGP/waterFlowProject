@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,11 @@
 body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+    background: #f8f8ff; /*#a3ccc8*/
 }
 
 a {
-    color: #23232e;
+    color:rgb(61, 61, 87);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -34,7 +36,7 @@ nav {
 
 main {
    display: grid;
-   background: url("../images/bg-darkblue.png") no-repeat center center;
+   background-image: url(../images/jujuba.png); /* url("../images/bg-darkblue.png") no-repeat center center; */
    background-size: cover;
    height: 86vh; 
 }
@@ -73,10 +75,15 @@ footer {
 }
 
 .animated-btn {
-    display: flex;
+    display: none; /* MUDA ISSO AQUI DEPOIS BOY */
     gap: 1rem;
 }
-
+ .users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
 
 @media (max-width: 999px) {
     body {
@@ -202,7 +209,7 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 0 0 0.5em#6959cd ;
-    background: #0e1242; 
+    background: #3e3ed6; 
     border: 0.25em solid #f8f8ff;
     border-radius: 1em;
     outline: none;
@@ -224,10 +231,10 @@ button::after {
 }
 button:hover {
     color:#f8f8ff;
-    background-color:#130d65;
-    box-shadow: 0 0 2px 6px #130d65,
-    0 0 4px 2px #130d65, 
-    inset 0 0 2px 4px #130d65;
+    background-color:#3027b5;
+    box-shadow: 0 0 2px 6px #3e3ed6,
+    0 0 4px 2px #3a31bd, 
+    inset 0 0 2px 4px #3e3ed6;
 }
 
 /* Estilização botão */
@@ -305,3 +312,37 @@ button:hover {
 .text-about {
     color:whitesmoke;
 }   
+
+.container main .contents {
+    display: flex;
+    margin: 30px auto 0 auto;
+    border-radius: 32px;
+    width: 90vw;
+    padding: 2.2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    color:rgb(61, 61, 87);
+    background: rgba(121, 212, 212, 0.5);
+}
+
+.container main .contents .first {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.container main .contents .second {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container main .contents .second h2 {
+    margin: 0 auto;
+}

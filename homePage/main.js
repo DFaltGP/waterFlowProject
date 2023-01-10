@@ -48,3 +48,8 @@ definir o evento e rodá-lo com a JS DOM;
 
 // const buttons = document.querySelector(".animated-btn") 
 // buttons.remove();
+
+const enterButton = document.querySelector("#enter")
+enterButton.addEventListener('click', () => {
+    location.href = "../loginPage/loginPage.html"
+})
